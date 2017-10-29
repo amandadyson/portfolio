@@ -17,12 +17,14 @@
   <body>
     <header>
       <nav class="header animated fadeIn">
+        <div class="mobile-menu" id="mobile-menu">
+        </div>
         <div class="one-half">
           <a href="index.html"><img class="logo" src="assets/AD-logo.png" alt="Amanda Dyson"></a>
         </div>
         <div class="one-half">
 
-          <div class="spinner-master2">
+          <div class="spinner-master2" id="menu">
             <input type="checkbox" id="spinner-form2" />
             <label for="spinner-form2" class="spinner-spin2">
               <div class="spinner2 diagonal part-1"></div>
@@ -32,17 +34,18 @@
           </div>
 
           <ul class="menu-items">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="index.html">WORK</a></li>
+            <li><a href="#jump-to-about">ABOUT</a></li>
+            <li><a href="#jump-to-work">WORK</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <section class="work animated fadeIn">
-        <div class="about">
-          <h2 class="animated fadeInUp">UX/UI Designer based in San Francisco.</h2>
-        </div>
+      <div class="about">
+        <h2 class="animated fadeInUp">UX/UI Designer based in San Francisco.</h2>
+      </div>
+      <div class="projects smooth-scroll" id="jump-to-work">
         <a href="habit.html" id="habit-link">
           <div class="project">
             <img src="assets/Habit.jpg" alt="Habit" class="project-image">
@@ -66,13 +69,14 @@
 
           </div>
         </a>
+      </div>
     </section>
 
-    <section class="about">
-      <div class="about-image">
+    <section class="bio-section">
+      <div class="bio-image">
         <img src="assets/temp-profile-photo.jpg" alt="Bio Photo">
       </div>
-      <div class="bio">
+      <div class="bio smooth-scroll" id="jump-to-about">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. fugiat nulla pariatur. Excepteur sint occaecat.</p>
       </div>
     </section>
@@ -81,9 +85,9 @@
       <div>
         <ul class="bio-links">
           <li><a href="mailto:acdyson@gmail.com">EMAIL</a></li>
-          <li><a href="resume.pdf">RESUME</a></li>
-          <li><a href="https://www.linkedin.com/in/amanda-dyson-4b911020/">LINKEDIN</a></li>
-          <li><a href="https://github.com/amandadyson">GITHUB</a></li>
+          <li><a href="resume.pdf" target="_blank">RESUME</a></li>
+          <li><a href="https://www.linkedin.com/in/amanda-dyson-4b911020/" target="_blank">LINKEDIN</a></li>
+          <li><a href="https://github.com/amandadyson" target="_blank">GITHUB</a></li>
         </ul>
       </div>
     </section>
@@ -96,6 +100,13 @@
         <img id="footer-logo" src="assets/AD-white-footer-logo.png" alt="Amanda Dyson portfolio copyright 2017">
       </div>
     </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+      $("#menu").click(function() {
+             $("#mobile-menu").toggleClass("open", 200);
+         });
+    </script>
 
   </body>
   </html>
