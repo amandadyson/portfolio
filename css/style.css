@@ -42,28 +42,15 @@ p {
   font-weight: 300;
 }
 
-
 /* Header */
 
 .header {
   padding-top: 30px;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  z-index: 150;
   position: relative;
-}
-.container::before,
-.container::after {
-  content: " ";
-  display: table;
-}
-.container::after {
   clear: both;
 }
+
 .one-half {
   width: 45%;
   float: left;
@@ -79,13 +66,6 @@ p {
 
 .menu-items {
   visibility: hidden;
-  text-decoration: none;
-}
-
-.hamburger {
-  width: 25px;
-  float: right;
-  padding-right: 15px;
 }
 
 .about {
@@ -96,6 +76,72 @@ p {
 .about h2 {
   padding: 40px 25px 0 25px;
   margin-bottom: 0;
+}
+
+/* hamburger spinner */
+
+.spinner-master2 * {transition:all 0.3s;-webkit-transition:all 0.3s;box-sizing:border-box;}
+
+.spinner-master2 {position:relative;margin:0 auto;height:30px;width:30px;float:right;margin-right:20px;margin-top:-10px;}
+
+.spinner-master2 input[type=checkbox] {display:none;}
+.spinner-master2 label {cursor:pointer;position:absolute;z-index:99;height:100%;width:100%;top:10px;left:0;}
+
+.spinner-master2 .spinner2 {position:absolute;height:5px;width:100%;background-color:#818181;}
+
+.spinner-master2 .diagonal.part-1 {position:relative;float:left;border-radius:8px;}
+.spinner-master2 .horizontal {position:relative;float:left;margin-top:7px;border-radius:8px;}
+.spinner-master2 .diagonal.part-2 {position:relative;float:left;margin-top:6px;border-radius:8px;}
+
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {opacity: 0;}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {transform:rotate(135deg);-webkit-transform:rotate(135deg);margin-top:10px;}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {transform:rotate(-135deg);-webkit-transform:rotate(-135deg);margin-top:-16px;}
+
+@media (min-width: 768px) {
+  .header {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s ease;
+  }
+
+  .one-half {
+    margin: 0 8% 20px;
+    width: 32%;
+    transition: 0.5s ease;
+  }
+
+  .menu-items {
+    visibility: visible;
+    list-style: none;
+    float: right;
+    padding-top: 11px;
+    margin-right: -20px;
+  }
+
+  .menu-items li {
+    display: inline;
+  }
+
+  .menu-items a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 40px;
+  }
+
+  .spinner-master2 {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+  }
+
+  .about {
+    margin-left: -11px;
+    padding-bottom: 80px;
+  }
+
 }
 
 
@@ -160,6 +206,42 @@ p {
   background-image: url("../assets/trove.jpg");
 }
 
+@media (min-width: 668px)  {
+  .work {
+    margin-left: 5%;
+    transition: 0.3s;
+    margin-right: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .work {
+    margin-left: 15%;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: 1100px)  {
+  .work {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+  .project {
+    width: 377px;
+    height: 377px;
+    transition: .5s ease;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .overlay {
+    height: 377px;
+    width: 377px;
+  }
+}
+
+
 /* About */
 
 .about {
@@ -199,8 +281,33 @@ p {
 .bio-links a {
   text-decoration: none;
   color: #242424;
-  cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .about-image {
+    height: 600px;
+    overflow: hidden;
+    transition: .5s ease;
+  }
+
+  .bio {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .bio-links {
+    margin-left: 20%;
+  }
+
+  .bio-links li:first-child {
+    padding-left: 0;
+    margin-left: -10px;
+  }
+
+  .bio-links li {
+    display: inline;
+    padding-left: 40px;
+  }
 
 /* Footer */
 
@@ -214,6 +321,5 @@ p {
 }
 
 #footer-logo {
-  margin: 0 auto 60px 15%;
-  width: 192px;
+
 }
