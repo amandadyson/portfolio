@@ -42,11 +42,11 @@ p {
   font-weight: 300;
 }
 
+
 /* Header */
 
 .header {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .container {
@@ -79,6 +79,7 @@ p {
 
 .menu-items {
   visibility: hidden;
+  text-decoration: none;
 }
 
 .hamburger {
@@ -95,4 +96,124 @@ p {
 .about h2 {
   padding: 40px 25px 0 25px;
   margin-bottom: 0;
+}
+
+
+/* Work */
+
+.work {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.project {
+  width: 262px;
+  height: 262px;
+  background-color: gray;
+  margin-bottom:20px;
+  margin-left: 25px;
+  float: left;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 262px;
+  width: 262px;
+  opacity: .9;
+  transition: .5s ease;
+  background-color: #e19d9c;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 60px;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#habit-link:hover .overlay {
+  visibility: visible;
+  display: block;
+}
+
+#press {
+  background-image: url("../assets/press.jpg");
+}
+
+#trove {
+  background-image: url("../assets/trove.jpg");
+}
+
+/* About */
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about-image {
+  height: 450px;
+  overflow: hidden;
+}
+
+.about-image img {
+  min-width: 100%;
+  min-height: 420px;
+}
+
+.bio {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.bio-links {
+  float: left;
+  margin-left: 25px;
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 3;
+  margin-top: -60px;
+  margin-bottom: -120px;
+}
+
+.bio-links a {
+  text-decoration: none;
+  color: #242424;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  float: left;
+  clear: both;
+  height: 400px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#footer-logo {
+  margin: 0 auto 60px 15%;
+  width: 192px;
 }
