@@ -18,15 +18,19 @@
     <header>
       <nav class="header animated fadeIn">
         <div class="mobile-menu" id="mobile-menu">
+          <ul class="mobile-menu-items">
+            <li><a href="#jump-to-about">ABOUT</a></li>
+            <li><a href="#jump-to-work">WORK</a></li>
+          </ul>
         </div>
         <div class="one-half">
           <a href="index.html"><img class="logo" src="assets/AD-logo.png" alt="Amanda Dyson"></a>
         </div>
         <div class="one-half">
 
-          <div class="spinner-master2" id="menu">
+          <div class="spinner-master2">
             <input type="checkbox" id="spinner-form2" />
-            <label for="spinner-form2" class="spinner-spin2">
+            <label for="spinner-form2" class="spinner-spin2" id="menu">
               <div class="spinner2 diagonal part-1"></div>
               <div class="spinner2 horizontal"></div>
               <div class="spinner2 diagonal part-2"></div>
@@ -117,6 +121,13 @@
       $("#menu").click(function() {
              $("#mobile-menu").toggleClass("open", 200);
          });
+
+     $(document).click(function(e) {
+	      if (!$(e.target).is('body')) {
+    	    $("#mobile-menu").toggleClass("hide");	    
+        }
+      });
+
     </script>
 
   </body>
