@@ -205,6 +205,12 @@ p {
   width: 100%;
 }
 
+#trove-link img {
+  height: 100%;
+  width: auto;
+  margin-left: -25px;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -213,13 +219,32 @@ p {
   right: 0;
   height: 262px;
   width: 262px;
-  opacity: .9;
-  transition: .5s ease;
-  background-color: #e19d9c;
+  visibility: hidden;
+  -webkit-transition: all 100ms ease-in-out;
+	   -moz-transition: all 100ms ease-in-out;
+		-ms-transition: all 100ms ease-in-out;
+		 -o-transition: all 100ms ease-in-out;
+			transition: all 100ms ease-in-out;
+}
+
+.habit-overlay {
+    background-color: rgba(225,157,156,.8);
+}
+
+.press-overlay {
+    background-color: rgba(249,77,47,.8);
+}
+
+.trove-overlay {
+    background-color: rgba(26,148,111,.8);
+}
+
+.tbd-overlay {
+    background-color: rgba(129,129,129,.8);
 }
 
 .overlay-text {
-  color: white;
+  color: rgba(255,255,255,1);
   font-size: 60px;
   font-family: "Nunito Sans", Helvetica, sans-serif;
   position: absolute;
@@ -227,6 +252,12 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  visibility: hidden;
+  -webkit-transition: all 100ms ease-in-out;
+     -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+     -o-transition: all 100ms ease-in-out;
+      transition: all 100ms ease-in-out;
 }
 
 #habit-link:hover .overlay {
@@ -234,13 +265,41 @@ p {
   display: block;
 }
 
-#press {
-  background-image: url("../assets/press.jpg");
+#habit-link:hover .overlay-text {
+  visibility: visible;
+  display: block;
 }
 
-#trove {
-  background-image: url("../assets/trove.jpg");
+#press-link:hover .overlay {
+  visibility: visible;
+  display: block;
 }
+
+#press-link:hover .overlay-text {
+  visibility: visible;
+  display: block;
+}
+
+#trove-link:hover .overlay {
+  visibility: visible;
+  display: block;
+}
+
+#trove-link:hover .overlay-text {
+  visibility: visible;
+  display: block;
+}
+
+#tbd-link:hover .overlay {
+  visibility: visible;
+  display: block;
+}
+
+#tbd-link:hover .overlay-text {
+  visibility: visible;
+  display: block;
+}
+
 
 @media (min-width: 668px)  {
   .work {
