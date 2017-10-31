@@ -78,7 +78,7 @@
           <div class="project">
             <img src="" alt="" class="project-image">
             <div class="overlay tbd-overlay">
-              <div class="overlay-text">TBD</div>
+              <div class="overlay-text">COMING SOON</div>
             </div>
           </div>
         </a>
@@ -118,28 +118,28 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
-    //   $("#menu").click(function() {
-    //          $("#mobile-menu").toggleClass("open", 200);
-    //      });
-     //
-    //  $(document).click(function(e) {
-	  //     if (!$(e.target).is('body')) {
-    // 	    $("#mobile-menu").toggleClass("hide");
-    //     }
-    //   });
 
     $(document).ready(function(){
-      $('#menu').on('click', function(){
-          $('.mobile-menu').toggleClass('open');
-          return false;
-      });
-    });
+          $('#menu').on('click', function(){
+              $('#mobile-menu').toggleClass('open', 200);
+              $(this).toggleClass('close');
+              return false;
+          });
+        });
 
-    $(document).click(function(){
-      if($('.mobile-menu').hasClass('open')) {
-          $('.mobile-menu').toggleClass('hide');
-      }
-    });
+        $(document).click(function(){
+          if($('#mobile-menu').hasClass('open')) {
+              $('#mobile-menu').removeClass('open');
+              $('#menu').removeClass('close');
+          }
+        });
+
+        $(window).resize(function(){
+          if($('#mobile-menu').hasClass('open')) {
+              $('#mobile-menu').removeClass('open');
+              $('#menu').removeClass('close');
+          }
+        });
 
     </script>
 
