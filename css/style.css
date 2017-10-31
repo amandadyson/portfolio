@@ -55,18 +55,18 @@ p {
 /* active/open mobile menu */
 
 .mobile-menu {
-  height: 100%;
-  width:225px;
+  height: 0;
+  width:100%;
   margin-top: -30px;
   position: fixed;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  transform: translate(-280px,0);
-    -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
-    -o-transform: translate(-280px,0); /** Opera **/
-    -moz-transform: translate(-280px,0); /** Firefox **/
+  transform: translate(0px,-200px);
+    -webkit-transform: translate(0px,-200px); /** Chrome & Safari **/
+    -o-transform: translate(0px,-200px); /** Opera **/
+    -moz-transform: translate(0px,-200px); /** Firefox **/
     z-index: 800;
 }
 
@@ -239,11 +239,9 @@ p {
 
 
 .project {
-  width: 262px;
-  height: 262px;
-  background-color: gray;
-  margin-bottom:20px;
-  margin-left: 25px;
+  width: 98%;
+  height: auto;
+  margin:0 1% 20px;
   float: left;
   background-position: center;
   background-size: cover;
@@ -256,19 +254,18 @@ p {
 }
 
 #trove-link img {
-  height: 100%;
-  width: auto;
-  margin-left: -25px;
+  width: 100%;
+  height: auto;
 }
 
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 0;840
   right: 0;
-  height: 262px;
-  width: 262px;
+  height: 100%;
+  width: 100%;
   visibility: hidden;
   -webkit-transition: all 50ms ease-in-out;
 	   -moz-transition: all 50ms ease-in-out;
@@ -381,20 +378,19 @@ p {
     margin-right: auto;
     margin-left: auto;
     display: table;
-    width: 794px;
+    width: 840px;
   }
 
   .project {
-    width: 377px;
+    width: 48%;
     height: 377px;
     transition: .5s ease;
-    margin-left: 0;
-    margin-right: 20px;
+    margin: 0 1% 20px;
   }
 
   .overlay {
-    height: 377px;
-    width: 377px;
+    height: 100%;
+    width: 100%;
   }
 }
 

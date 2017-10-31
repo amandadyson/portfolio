@@ -118,15 +118,28 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
-      $("#menu").click(function() {
-             $("#mobile-menu").toggleClass("open", 200);
-         });
+    //   $("#menu").click(function() {
+    //          $("#mobile-menu").toggleClass("open", 200);
+    //      });
+     //
+    //  $(document).click(function(e) {
+	  //     if (!$(e.target).is('body')) {
+    // 	    $("#mobile-menu").toggleClass("hide");
+    //     }
+    //   });
 
-     $(document).click(function(e) {
-	      if (!$(e.target).is('body')) {
-    	    $("#mobile-menu").toggleClass("hide");	    
-        }
+    $(document).ready(function(){
+      $('#menu').on('click', function(){
+          $('.mobile-menu').toggleClass('open');
+          return false;
       });
+    });
+
+    $(document).click(function(){
+      if($('.mobile-menu').hasClass('open')) {
+          $('.mobile-menu').toggleClass('hide');
+      }
+    });
 
     </script>
 
