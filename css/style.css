@@ -42,7 +42,7 @@ p {
   font-weight: 300;
 }
 
-/* active links, hover */
+/* links, hover */
 
 .menu-items a:hover {
   color: #FF65F6;
@@ -54,6 +54,14 @@ p {
 
 .bio-links a:hover {
   color: #FF65F6;
+}
+
+#jump-to-about {
+  outline-style: none;
+}
+
+#jump-to-work {
+  outline-style: none;
 }
 
 /* active/open mobile menu */
@@ -255,12 +263,6 @@ p {
   width: 100%;
 }
 
-#trove-link img {
-  height: 377px;
-  width: auto;
-  margin-left: -20px;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -308,6 +310,10 @@ p {
     -ms-transition: all 50ms ease-in-out;
      -o-transition: all 50ms ease-in-out;
       transition: all 50ms ease-in-out;
+}
+
+#tbd-link .overlay-title {
+  top: 50%;
 }
 
 .overlay-description {
@@ -373,11 +379,6 @@ p {
     margin-left:15%;
     transition: 0.3s;
     margin-right: 15%;
-  }
-  #trove-link img {
-    width: 104%;
-    height: auto;
-    margin-left: 0;
   }
   .overlay {
     position: absolute;
@@ -447,12 +448,6 @@ p {
     margin: 0;
   }
 
-  #trove-link img {
-    height: 377px;
-    width: auto;
-    margin-left: -20px;
-  }
-
   .projects {
     margin-right: auto;
     margin-left: auto;
@@ -465,11 +460,6 @@ p {
     height: 377px;
     transition: .5s ease;
     margin: 0 1% 20px;
-  }
-
-
-  #press-link img {
-    margin-top: -30px;
   }
 
   .overlay {
@@ -501,13 +491,13 @@ p {
 .bio {
   padding-top: 30px;
   padding-bottom: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .bio-links {
   float: left;
-  margin-left: 25px;
+  margin-left: 40px;
   list-style: none;
   text-align: left;
   font-size: 20px;
@@ -569,8 +559,8 @@ p {
 .footer-logo {
   z-index: 1;
   position: absolute;
-  right: 40px;
-  bottom: 40px;
+  right: 60px;
+  bottom: 60px;
 }
 
 .footer-logo img {
