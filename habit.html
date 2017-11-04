@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Amanda Dyson: Habit Project</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <div class="mobile-menu" id="mobile-menu">
+          <ul class="mobile-menu-items">
+            <li><a href="index.html#jump-to-about">ABOUT</a></li>
+            <li><a href="index.html#jump-to-work">WORK</a></li>
+          </ul>
+        </div>
+        <div class="one-half">
+          <a href="index.html"><img class="logo" src="assets/AD-logo.png" alt="Amanda Dyson"></a>
+        </div>
+        <div class="one-half">
+
+          <div class="spinner-master2">
+            <input type="checkbox" id="spinner-form2" />
+            <label for="spinner-form2" class="spinner-spin2" id="menu">
+              <div class="spinner2 diagonal part-1"></div>
+              <div class="spinner2 horizontal"></div>
+              <div class="spinner2 diagonal part-2"></div>
+            </label>
+          </div>
+
+          <ul class="menu-items">
+            <li><a href="index.html#jump-to-about">ABOUT</a></li>
+            <li><a href="index.html#jump-to-work">WORK</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="project-header">
+      <div class="project-title">
+        <h1>HABIT</h1>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-logo">
+        <img src="assets/AD-white-footer-logo.png" alt="Amanda Dyson copyright 2017">
+      </div>
+      <div class="footer-background">
+        <img src="assets/footer-home-yellow.png" alt="Amanda Dyson">
+      </div>
+    </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+          $('#menu').on('click', function(){
+              $('#mobile-menu').toggleClass('open', 200);
+              $(this).toggleClass('close');
+              return false;
+          });
+        });
+
+        $(document).click(function(){
+          if($('#mobile-menu').hasClass('open')) {
+              $('#mobile-menu').removeClass('open');
+              $('#menu').removeClass('close');
+          }
+        });
+
+        $(window).resize(function(){
+          if($('#mobile-menu').hasClass('open')) {
+              $('#mobile-menu').removeClass('open');
+              $('#menu').removeClass('close');
+          }
+        });
+
+    </script>
+
+  </body>
+</html>

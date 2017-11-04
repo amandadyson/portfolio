@@ -45,11 +45,15 @@ p {
 /* active links, hover */
 
 .menu-items a:hover {
-    color: #FF65F6;
+  color: #FF65F6;
+}
+
+.mobile-menu-items a:hover {
+  color: #FF65F6;
 }
 
 .bio-links a:hover {
-    color: #FF65F6;
+  color: #FF65F6;
 }
 
 /* active/open mobile menu */
@@ -106,6 +110,7 @@ p {
     padding-left: 40px;
   }
 
+/* HOMEPAGE */
 
 /* Header */
 
@@ -129,7 +134,7 @@ p {
 }
 
 .logo {
-  width: 80px;
+  width: 90px;
   padding-left: 20px;
 }
 
@@ -147,13 +152,6 @@ p {
 .about h2 {
   padding: 40px 25px 50px 25px;
   margin-bottom: 0;
-}
-
-/* smooth scroll */
-
-.smooth-scroll {
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: 0.6s ease-in-out;
 }
 
 
@@ -174,7 +172,7 @@ p {
 
 .spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {opacity: 0;}
 .spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {transform:rotate(135deg);-webkit-transform:rotate(135deg);margin-top:10px;}
-.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {transform:rotate(-135deg);-webkit-transform:rotate(-135deg);margin-top:-16px;}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {transform:rotate(-135deg);-webkit-transform:rotate(-135deg);margin-top:-17px;}
 
 .spinner-spin2.close > .horizontal {opacity: 0;}
 .spinner-spin2.close > .diagonal.part-1 {transform:rotate(135deg);-webkit-transform:rotate(135deg);margin-top:10px;}
@@ -258,7 +256,9 @@ p {
 }
 
 #trove-link img {
-  height: 100%;
+  height: 377px;
+  width: auto;
+  margin-left: -20px;
 }
 
 .overlay {
@@ -267,7 +267,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  height: 99%;
   width: 100%;
   visibility: hidden;
   -webkit-transition: all 50ms ease-in-out;
@@ -278,27 +278,27 @@ p {
 }
 
 .habit-overlay {
-    background-color: rgba(225,157,156,.8);
+    background-color: rgba(225,157,156,.9);
 }
 
 .press-overlay {
-    background-color: rgba(249,77,47,.8);
+    background-color: rgba(249,77,47,.9);
 }
 
 .trove-overlay {
-    background-color: rgba(26,148,111,.8);
+    background-color: rgba(26,148,111,.9);
 }
 
 .tbd-overlay {
-    background-color: rgba(129,129,129,.8);
+    background-color: rgba(129,129,129,.9);
 }
 
-.overlay-text {
+.overlay-title {
   color: rgba(255,255,255,1);
-  font-size: 60px;
+  font-size: 65px;
   font-family: "Nunito Sans", Helvetica, sans-serif;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -310,12 +310,29 @@ p {
       transition: all 50ms ease-in-out;
 }
 
+.overlay-description {
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transition: all 50ms ease-in-out;
+     -moz-transition: all 50ms ease-in-out;
+    -ms-transition: all 50ms ease-in-out;
+     -o-transition: all 50ms ease-in-out;
+      transition: all 50ms ease-in-out;
+}
+
+
 #habit-link:hover .overlay {
   visibility: visible;
   display: block;
 }
 
-#habit-link:hover .overlay-text {
+#habit-link:hover .overlay-title {
   visibility: visible;
   display: block;
 }
@@ -325,7 +342,7 @@ p {
   display: block;
 }
 
-#press-link:hover .overlay-text {
+#press-link:hover .overlay-title {
   visibility: visible;
   display: block;
 }
@@ -335,7 +352,7 @@ p {
   display: block;
 }
 
-#trove-link:hover .overlay-text {
+#trove-link:hover .overlay-title {
   visibility: visible;
   display: block;
 }
@@ -345,26 +362,79 @@ p {
   display: block;
 }
 
-#tbd-link:hover .overlay-text {
+#tbd-link:hover .overlay-title {
   visibility: visible;
   display: block;
 }
 
 
-@media (min-width: 668px)  {
+@media (min-width: 401px)  {
   .work {
-    margin-left: 5%;
+    margin-left:15%;
     transition: 0.3s;
-    margin-right: 80px;
+    margin-right: 15%;
+  }
+  #trove-link img {
+    width: 104%;
+    height: auto;
+    margin-left: 0;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 99%;
+    width: 100%;
+    visibility: hidden;
+    -webkit-transition: all 50ms ease-in-out;
+  	   -moz-transition: all 50ms ease-in-out;
+  		-ms-transition: all 50ms ease-in-out;
+  		 -o-transition: all 50ms ease-in-out;
+  			transition: all 50ms ease-in-out;
+  }
+
+  .habit-overlay {
+      background-color: rgba(225,157,156,.9);
+  }
+
+  .press-overlay {
+      background-color: rgba(249,77,47,.9);
+  }
+
+  .trove-overlay {
+      background-color: rgba(26,148,111,.9);
+  }
+
+  .tbd-overlay {
+      background-color: rgba(129,129,129,.9);
+  }
+
+  .overlay-title {
+    font-size: 60px;
+  }
+
+  .overlay-description {
+    font-size: 14px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px)  {
   .work {
-    margin-left: 15%;
+    margin-left: 22%;
+    margin-right: 22%;
     transition: 0.3s;
   }
+  .overlay-title {
+    font-size: 65px;
+  }
+
+  .overlay-description {
+    font-size: 16px;
+  }
 }
+
 
 @media (min-width: 1100px)  {
   .about {
@@ -375,6 +445,12 @@ p {
 
   .work {
     margin: 0;
+  }
+
+  #trove-link img {
+    height: 377px;
+    width: auto;
+    margin-left: -20px;
   }
 
   .projects {
@@ -391,10 +467,9 @@ p {
     margin: 0 1% 20px;
   }
 
-  #trove-link img {
-    height: 100%;
-    width: auto;
-    margin-left: -20px;
+
+  #press-link img {
+    margin-top: -30px;
   }
 
   .overlay {
@@ -475,18 +550,70 @@ p {
     display: inline;
     padding-left: 40px;
   }
+}
 
 /* Footer */
 
 .footer {
-  position: relative;
-  float: left;
-  clear: both;
-  height: 400px;
   overflow: hidden;
+  position: relative;
+  clear: both;
+}
+
+.footer-background  {
+  width: 100%;
+  height: 400px;
   z-index: -1;
 }
 
-#footer-logo {
+.footer-logo {
+  z-index: 1;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
 
+.footer-logo img {
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .footer-logo {
+    right: 8%;
+  }
+  .footer-logo img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 2045px) {
+  .footer-background img {
+    width: 100%;
+  }
+}
+
+/* PROJECT PAGES */
+
+/* Project Header */
+
+.project-header {
+  position: relative;
+  clear: both;
+}
+
+.project-title {
+  position: relative;
+  clear: both;
+}
+
+.project-title h1 {
+  padding: 50px 25px;
+}
+
+@media (min-width: 1100px)  {
+  .project-header {
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
