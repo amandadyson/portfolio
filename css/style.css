@@ -12,6 +12,7 @@ body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   color: #242424;
   margin: 0;
+  font-weight: 300;
 }
 
 h1, h2, h3 {
@@ -408,6 +409,10 @@ p {
       background-color: rgba(26,148,111,.9);
   }
 
+  #trove-image {
+    margin-top: -10px;
+  }
+
   .tbd-overlay {
       background-color: rgba(129,129,129,.9);
   }
@@ -611,6 +616,7 @@ p {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 40px;
   }
   .project-info img {
     margin: 20px 0;
@@ -646,6 +652,13 @@ p {
 }
 
 @media (min-width: 768px)  {
+  .problem-text p {
+    font-size: 17px;
+  }
+
+  .solution-text p {
+    font-size: 17px;
+  }
   .problem-solution-web {
     display:block;
     margin-left: 15%;
@@ -680,11 +693,11 @@ p {
   color: #FF4B29;
 }
 
-.discovery-title-web {
+.project-section-title-web {
   display: none;
 }
 
-.discovery-title-mobile h1 {
+.project-section-title-mobile h1 {
   line-height: 72px;
   margin-top: 0;
   margin-bottom: 0;
@@ -695,14 +708,14 @@ p {
   padding-right: 10px;
 }
 
-.discovery-text p {
+.project-text p {
   font-size: 16px;
   line-height: 32px;
   padding-bottom: 40px
 }
 
 .personas {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .personas img {
@@ -715,6 +728,7 @@ p {
   clear: both;
   width: 100%;
   padding-bottom: 30px;
+  padding-top: 8px;
 }
 
 .user-stories img {
@@ -726,15 +740,18 @@ p {
 }
 
 @media (min-width: 768px)  {
+  .project-text p {
+    font-size: 17px;
+  }
   .discovery {
     display:block;
     margin-left: 12%;
     margin-right: 12%;
   }
-  .discovery-title-web {
+  .project-section-title-web {
     display: block;
   }
-  .discovery-title-mobile {
+  .project-section-title-mobile {
     display: none;
   }
   .personas {
@@ -748,7 +765,7 @@ p {
     position: relative;
     clear: none;
     width: 45%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     margin-left: 0;
     margin-right: 27px;
   }
@@ -759,5 +776,70 @@ p {
   .discovery .one-half {
     width: 48%;
     margin-right: 18px;
+  }
+}
+
+/* visual design section */
+
+.visual-design {
+  margin-left: 2%;
+  margin-right: 5%;
+  padding: 0 20px;
+}
+
+.visual-design h1 {
+  color: #FF4B29;
+}
+
+.styleguide {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.styleguide img {
+  width: 100%;
+}
+
+.wireframes {
+  margin: 0 0;
+  padding: 0 0 30px 0;
+}
+
+.wireframes img {
+  width: 100%;
+}
+
+@media (min-width: 768px)  {
+  .visual-design {
+    display:block;
+    position: relative;
+    clear: both;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+
+
+
+}
+
+/* conclusion */
+
+.conclusion {
+  padding-top: 0;
+}
+
+.conclusion-links .bio-links {
+    margin: -16px 0 -100px 2%;
+    padding-left: 20px;
+  }
+
+@media (min-width: 768px) {
+  .conclusion {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .conclusion-links .bio-links {
+    margin: 0 0 0 12%;
+    padding-left: 30px;
   }
 }
