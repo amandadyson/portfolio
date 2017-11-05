@@ -584,6 +584,7 @@ p {
 
 /* PROJECT PAGES */
 
+
 /* Project Header */
 
 .project-overview {
@@ -657,7 +658,106 @@ p {
   .problem-solution-mobile {
     display: none;
   }
-  .problem-solution-title h3 {
+  .solution-text {
+    padding-bottom: 30px;
+  }
+}
 
+/* Discovery Section */
+
+.process-title h3 {
+  line-height: 0;
+  padding: 0 0 20px;
+}
+
+.discovery {
+  margin-left: 2%;
+  margin-right: 5%;
+  padding: 10px 20px 20px;
+}
+
+.discovery h1 {
+  color: #FF4B29;
+}
+
+.discovery-title-web {
+  display: none;
+}
+
+.discovery-title-mobile h1 {
+  line-height: 72px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#number {
+  font-size: 60px;
+  padding-right: 10px;
+}
+
+.discovery-text p {
+  font-size: 16px;
+  line-height: 32px;
+  padding-bottom: 40px
+}
+
+.personas {
+  padding-bottom: 30px;
+}
+
+.personas img {
+  width: 100%;
+}
+
+.discovery .one-half {
+  display: block;
+  position: relative;
+  clear: both;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.user-stories img {
+  width: 100%;
+}
+
+.user-flows img {
+  width: 100%;
+}
+
+@media (min-width: 768px)  {
+  .discovery {
+    display:block;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .discovery-title-web {
+    display: block;
+  }
+  .discovery-title-mobile {
+    display: none;
+  }
+  .personas {
+    margin-left: 20%;
+  }
+  .personas img {
+    width: 80%;
+  }
+  .discovery .one-half {
+    display: block;
+    position: relative;
+    clear: none;
+    width: 45%;
+    padding-bottom: 30px;
+    margin-left: 0;
+    margin-right: 27px;
+  }
+}
+
+
+@media (min-width: 1237px)  {
+  .discovery .one-half {
+    width: 48%;
+    margin-right: 18px;
   }
 }
