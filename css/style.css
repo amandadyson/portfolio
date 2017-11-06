@@ -809,6 +809,11 @@ p {
   width: 100%;
 }
 
+.prototype-mov {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
 @media (min-width: 768px)  {
   .visual-design {
     display:block;
@@ -818,11 +823,13 @@ p {
     margin-right: 12%;
   }
 
-
-
 }
 
 /* conclusion */
+
+.project-text .last-paragraph {
+  padding-bottom: 10px;
+}
 
 .conclusion {
   padding-top: 0;
