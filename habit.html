@@ -99,16 +99,16 @@
         <p>Habit is a personal project I led from start to finish with guidance from a mentor. After the initial idea was concepted, I began with completing a competitive SWOT analysis and gathering data through a user survey. This research showed an opportunity for Habit, so I moved forward in developing  <b>user personas</b>, the foundation of the app’s design and features.</p>
       </div>
       <div class="personas">
-        <img class="zoom-image" data-original-image="assets/persona-Christa.jpg" src="assets/persona-Christa.jpg" alt="project personas">
+        <img src="assets/persona-Christa.jpg" alt="project personas">
       </div>
       <div class="project-text">
         <p>Users had a variety of goals they wanted to achieve: being mindful of time spent on social media throughout the day, maintaining current boundaries, and being attentive to money spent on apps. When creating <b>user stories</b>, each goal was given attention and incorporated into the design. <b>User flows</b> also reflected these goals, and outlined a structure for users to easily navigate the app.</p>
       </div>
       <div class="one-half user-stories">
-        <img class="zoom-image" data-original-image="assets/habit-user-stories.jpg" src="assets/habit-user-stories.jpg" alt="User stories">
+        <img src="assets/habit-user-stories.jpg" alt="User stories">
       </div>
       <div class="one-half user-flows">
-        <img class="zoom-image" data-original-image="assets/habit-user-flows.jpg" src="assets/habit-user-flows.jpg" alt="User flows">
+        <img src="assets/habit-user-flows.jpg" alt="User flows">
       </div>
     </section>
 
@@ -133,8 +133,14 @@
     </section>
 
     <section class="wireframes">
-      <img class="zoom-image" data-original-image="assets/Habit-app-wireframe.png" src="assets/Habit-app-wireframe.png" alt="Habit app wireframes">
-      <img class="zoom-image" data-original-image="assets/Habit-web-wireframes.png" src="assets/Habit-web-wireframes.png" alt="Habit app wireframes">
+      <div class="label" id="label-app">
+        <h3>HABIT APP</h3>
+      </div>
+      <img src="assets/Habit-app-wireframe.png" alt="Habit app wireframes">
+      <div class="label" id="label-marketing">
+        <h3>MARKETING SITE</h3>
+      </div>
+      <img id="marketing-wireframes" src="assets/Habit-web-wireframes.png" alt="Habit app wireframes">
     </section>
 
     <section class="visual-design">
@@ -199,15 +205,32 @@
           }
         });
 
-        $(function() {
-          $('.zoom-image').each(function(){
-            var originalImagePath = $(this).find('img').data('original-image');
-            $(this).zoom({
-              url: originalImagePath,
-              magnify: 1
-            });
-          });
-        });
+
+        $(document).ready(function() {
+          // Get media - with autoplay disabled (audio or video)
+         var media = $('video').not("[autoplay='autoplay']");
+         var tolerancePixel = 40;
+
+         function checkMedia(){
+             // Get current browser top and bottom
+             var scrollTop = $(window).scrollTop() + tolerancePixel;
+             var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+             media.each(function(index, el) {
+                 var yTopMedia = $(this).offset().top;
+                 var yBottomMedia = $(this).height() + yTopMedia;
+
+                 if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+                     $(this).get(0).play();
+                 } else {
+                     $(this).get(0).pause();
+                 }
+             });
+
+             //}
+         }
+         $(document).on('scroll', checkMedia);
+       });
 
     </script>
 
