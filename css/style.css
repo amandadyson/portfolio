@@ -689,6 +689,11 @@ p {
   padding: 10px 20px 20px;
 }
 
+.personas-section {
+  margin: -35px 5% -38px 2%;
+  padding: 10px 20px 20px;
+}
+
 .discovery h1 {
   color: #685C79;
 }
@@ -714,12 +719,8 @@ p {
   padding-bottom: 40px
 }
 
-.personas {
-  padding-bottom: 40px;
-}
-
-.personas img {
-  width: 100%;
+#following-carousel {
+  padding-top: 15px;
 }
 
 .discovery .one-half {
@@ -748,17 +749,16 @@ p {
     margin-left: 12%;
     margin-right: 12%;
   }
+  .personas-section {
+    display:block;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   .project-section-title-web {
     display: block;
   }
   .project-section-title-mobile {
     display: none;
-  }
-  .personas {
-    margin-left: 20%;
-  }
-  .personas img {
-    width: 80%;
   }
   .discovery .one-half {
     display: block;
@@ -776,6 +776,10 @@ p {
   .discovery .one-half {
     width: 48%;
     margin-right: 18px;
+  }
+  .personas-section {
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 

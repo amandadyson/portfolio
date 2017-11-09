@@ -12,6 +12,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
 
   </head>
   <body>
@@ -96,12 +98,20 @@
         <h1><span id="number">1</span>&nbsp&nbsp&nbsp&nbspDISCOVERY</h1>
       </div>
       <div class="project-text">
-        <p>Habit is a personal project I led from start to finish with guidance from a mentor. After the initial idea was concepted, I began with completing a competitive SWOT analysis and gathering data through a user survey. This research showed an opportunity for Habit, so I moved forward in developing  <b>user personas</b>, the foundation of the app’s design and features.</p>
+        <p>Habit is a personal project I led from start to finish with guidance from a mentor. After the initial idea was concepted, I began with completing a <b>competitive SWOT analysis</b> and gathering data through a <b>user survey</b>. This research showed an opportunity for Habit, so I moved forward in developing  <b>user personas</b>, the foundation of the app’s design and features.</p>
       </div>
+    </section>
+
+    <section class="personas-section">
       <div class="personas">
-        <img src="assets/persona-Christa.jpg" alt="project personas">
+        <img src="assets/persona-Christa.jpg" alt="project persona">
+        <img src="assets/persona-Casey.jpg" alt="project persona">
+        <img src="assets/persona-Kristen.jpg" alt="project persona">
       </div>
-      <div class="project-text">
+    </section>
+
+    <section class="discovery">
+      <div id="following-carousel" class="project-text">
         <p>Users had a variety of goals they wanted to achieve: being mindful of time spent on social media throughout the day, maintaining current boundaries, and being attentive to money spent on apps. When creating <b>user stories</b>, each goal was given attention and incorporated into the design. <b>User flows</b> also reflected these goals, and outlined a structure for users to easily navigate the app.</p>
       </div>
       <div class="one-half user-stories">
@@ -145,13 +155,13 @@
 
     <section class="visual-design">
       <div class="project-text">
-        <p>I used Sketch to create mockups for Habit, and went through multiple rounds of user feedback and testing. In this iteration of Habit, I utilized the color pallette to help users keep track of stats throughout the app. Through <b>user testing</b>, I learned that some of our potential users were having a difficult time finding where to set their goals, or even realizing that this was an option. Based on this information, I decided to incorporate goal setting into an onboarding process. User testing also lead to fine tuning the placement of the timeline and re-grouping items in account settings. After these changes, Habit was more user-friendly and intuitive.</p>
+        <p>I used Sketch to create <b>mockups</b> for Habit, and went through multiple rounds of <b>user feedback and testing</b>. In this iteration of Habit, I utilized the color pallette to help users keep track of stats throughout the app. Through user testing. I learned that some of our potential users were having a difficult time finding where to set their goals, or even realizing that this was an option. Based on this information, I decided to incorporate goal setting into an onboarding process. User testing also lead to fine tuning the placement of the timeline and re-grouping items in account settings. After these changes, Habit was more user-friendly and intuitive.</p>
       </div>
       <div class="prototype-mov">
         <video height="500" controls autoplay name="Habit Prototype" src="assets/Habit_Flinto.mov"></video>
       </div>
       <div class="project-text">
-        <p class="last-paragraph">I also created a responsive marketing web page design for the Habit app. I followed the same process: first wireframing and then adding the visual style. The final step in the project was using html and css to create a fully responsive web page that replicated the hi-fidelity prototype created in Sketch.</p>
+        <p class="last-paragraph">I also created a responsive marketing web page design for the Habit app. I followed the same process: first wireframing and then adding the visual style. The final step in the project was using html and css to create a <b>fully responsive web page</b> that replicated the hi-fidelity prototype created in Sketch.</p>
       </div>
     </section>
 
@@ -181,7 +191,10 @@
     </section>
 
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
+
+    //mobile menu open and close
 
     $(document).ready(function(){
           $('#menu').on('click', function(){
@@ -205,6 +218,8 @@
           }
         });
 
+
+        //play prototype video on scroll
 
         $(document).ready(function() {
           // Get media - with autoplay disabled (audio or video)
@@ -231,6 +246,16 @@
          }
          $(document).on('scroll', checkMedia);
        });
+
+
+       //Carousel for personas
+         $(document).ready(function(){
+           $('.personas').slick({
+             arrows: false,
+             dots: true
+           });
+         });
+
 
     </script>
 
