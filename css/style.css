@@ -240,6 +240,11 @@ p {
   }
 }
 
+@media (min-width: 2000px) {
+  .header {
+    width: 80%;
+  }
+}
 
 /* Work */
 
@@ -547,6 +552,15 @@ p {
   }
 }
 
+@media (min-width: 2000px) {
+  .bio-links li:first-child {
+    margin-left: -18px;
+  }
+  .bio-image img {
+    min-width: 75%;
+  }
+}
+
 /* Footer */
 
 .footer {
@@ -587,6 +601,10 @@ p {
   }
 }
 
+
+
+
+
 /* PROJECT PAGES */
 
 
@@ -607,6 +625,7 @@ p {
 
 .project-info img {
   width: 90%;
+  max-width: 1000px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -620,6 +639,16 @@ p {
   }
   .project-info img {
     margin: 20px 0;
+  }
+}
+
+@media (min-width: 2000px)  {
+  .project-overview {
+    width: 60%;
+  }
+  .project-info img {
+    margin: 20px auto 0 12%;
+    width: 70%;
   }
 }
 
@@ -673,6 +702,13 @@ p {
   }
   .solution-text {
     padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 2000px)  {
+  .problem-solution-web {
+    margin-left: 17%;
+    margin-right: 0;
   }
 }
 
@@ -783,6 +819,17 @@ p {
   }
 }
 
+@media (min-width: 2000px)  {
+  .personas-section {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .discovery {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
 /* visual design section */
 
 .visual-design {
@@ -884,6 +931,17 @@ p {
   }
 }
 
+@media (min-width: 2000px)  {
+  .visual-design {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .wireframes {
+    width: 75%;
+    margin-left: 14%;
+  }
+}
+
 /* conclusion */
 
 .project-text .last-paragraph {
@@ -908,4 +966,15 @@ p {
     margin: 0 0 0 12%;
     padding-left: 30px;
   }
+}
+
+@media (min-width: 2000px) {
+  .conclusion {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .conclusion-links .bio-links {
+      margin: 0 0 0 20%;
+      padding-left: 30px;
+    }
 }
