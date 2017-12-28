@@ -34,11 +34,11 @@ h2 {
 h3 {
   font-size: 20px;
   font-weight: 700;
-  line-height: 27;
+  line-height: 27px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 36px;
   font-weight: 300;
 }
@@ -253,7 +253,7 @@ p {
 /* Work */
 
 .work {
-  padding-top: 60px;
+  padding-top: 120px;
   padding-bottom: 30px;
 }
 
@@ -489,6 +489,7 @@ p {
 
 /* About / Bio */
 
+
 .bio-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -510,7 +511,6 @@ p {
 .bio-links {
   float: left;
   margin-left: 40px;
-  padding-left: 0;
   list-style: none;
   text-align: left;
   font-size: 20px;
@@ -529,8 +529,17 @@ p {
 }
 
 @media (min-width: 768px) {
+  .about-page {
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bio-section {
+    padding-top: 120px;
+  }
+
   .bio-image {
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
     transition: .5s ease;
@@ -539,11 +548,12 @@ p {
   .bio {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
   }
 
   .bio-links {
-    margin-left: 10.75%;
+    margin-left: 0;
+    padding-left: 7px;
   }
 
   .bio-links li:first-child {
@@ -557,25 +567,6 @@ p {
   }
 }
 
-@media (min-width: 1660px) {
-  .bio-links li:first-child {
-    margin-left: -18px;
-  }
-  .bio-image img {
-    min-width: 75%;
-  }
-  .bio-image {
-    width: 50%;
-  }
-  .bio {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  .bio-links {
-    margin-left: 25.75%;
-  }
-}
 
 /* Footer */
 
@@ -663,8 +654,8 @@ p {
 
 @media (min-width: 768px)  {
   .project-overview {
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding-top: 40px;
   }
   .project-info img {
@@ -715,15 +706,9 @@ p {
 }
 
 .problem-text p {
-  font-size: 16px;
-  line-height: 32px;
   padding-bottom: 40px
 }
 
-.solution-text p {
-  font-size: 16px;
-  line-height: 32px;
-}
 
 @media (min-width: 768px)  {
   .gray-background-mobile {
@@ -737,13 +722,6 @@ p {
     padding-bottom: 20px;
   }
 
-  .problem-text p {
-    font-size: 17px;
-  }
-
-  .solution-text p {
-    font-size: 17px;
-  }
   .problem-solution-web {
     display:block;
     margin-left: 15%;
@@ -806,8 +784,6 @@ p {
 }
 
 .project-text p {
-  font-size: 16px;
-  line-height: 32px;
   padding-bottom: 40px
 }
 
@@ -833,13 +809,10 @@ p {
 }
 
 @media (min-width: 768px)  {
-  .project-text p {
-    font-size: 17px;
-  }
   .discovery {
     display:block;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding-top: 40px;
   }
   .personas-section {
@@ -946,18 +919,14 @@ p {
   padding-top: 90px;
 }
 
-.prototype-mov {
-  text-align: center;
-  padding-bottom: 40px;
-}
 
 @media (min-width: 768px)  {
   .visual-design {
     display:block;
     position: relative;
     clear: both;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   .wireframes {
@@ -1016,11 +985,11 @@ p {
 
 @media (min-width: 768px) {
   .conclusion {
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
   .conclusion-links .bio-links {
-    margin: 0 0 0 12%;
+    margin: 0 0 0 20%;
     padding-left: 30px;
   }
 }
@@ -1107,5 +1076,259 @@ p {
     color: #fff;
     margin-top: -228px;
     margin-left: 40px;
+  }
+}
+
+
+
+
+
+/* VERSION 2 PROJECT LAYOUT */
+
+
+
+/* Hero section and project summary */
+
+.case-study {
+  padding-top: 200px;
+}
+
+.case-study-image img {
+  width: 100%;
+}
+
+.project-main-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study-external-links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #FF65F6;
+}
+
+.case-study-external-links a:hover {
+  color: #818181;
+}
+
+.project-hero-img img {
+  width: 100%;
+}
+
+.project-hero-title {
+  padding: 20px 0;
+}
+
+.project-hero .bio-links {
+  margin-left: 0;
+  padding: 15px 0;
+}
+
+.project-summary {
+  padding: 85px 0 40px 0;
+}
+
+.project-summary p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .project-main-content {
+    width: 60%;
+    max-width: 800px;
+  }
+
+  .project-hero-title {
+    padding: 40px 0;
+  }
+
+  .project-hero .bio-links {
+    padding: 0 0 0 10px;
+  }
+
+  .project-summary {
+    padding-top: 10px;
+  }
+}
+
+
+/* Role, Deliverables, and Tools */
+
+.roles-and-tools-mobile {
+  display: block;
+  }
+
+.roles-and-tools-web {
+  display: none;
+  width: 140%;
+  margin-left: -20%;
+}
+
+.role-and-tools {
+  margin: 40px 0;
+  background-color: #F6F6F6;
+}
+
+.role-and-tools-content {
+  padding: 40px 0 55px 0;
+}
+
+.roles-and-tools-list-mobile {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.mobile-list {
+  padding: 10px 0 20px 0;
+}
+
+.role-tools-list {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 1062px) {
+
+  .roles-and-tools-mobile {
+    display: none;
+    }
+
+  .roles-and-tools-web {
+    display: block;
+  }
+
+  .one-third {
+    width: 33%;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+
+/* Problem Solution */
+
+.problem-solution {
+  padding: 40px 0;
+}
+
+.problem-solution h1 {
+  margin: 40px 0 20px 0;
+}
+
+.problem-solution .project-summary {
+  padding-top: 10px;
+}
+
+.problem-statement {
+  width: 90%;
+  float: left;
+  display: relative;
+  clear: both;
+}
+
+.solution-statement {
+  width: 90%;
+  float: right;
+  display: relative;
+  clear: both;
+  text-align: right;
+}
+
+.talk-bubble img {
+  width: 80px;
+}
+
+#solution-paragraph {
+  padding-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  .problem-statement {
+    width: 75%;
+  }
+
+  .solution-statement {
+    width: 75%;
+  }
+
+  .talk-bubble img {
+    width: 100px;
+  }
+}
+
+/* Discovery */
+
+.discovery-section-background {
+  background-color: #F6F6F6;
+  position: relative;
+  clear: both;
+}
+
+.discovery-section {
+  padding: 35px 0 30px 0;
+}
+
+.case-study-section-header h1 {
+  margin-bottom: 20px;
+}
+
+#discovery-first-paragraph-mobile {
+  padding-top: 10px;
+}
+
+.discovery-section .case-study-image img {
+  padding: 60px 0 10px 0;
+}
+
+/* Visual Design */
+
+.visual-design-section {
+  padding: 35px 0 0 0;
+}
+
+#visual-first-paragraph-mobile {
+  padding-top: 10px;
+}
+
+.visual-design-section .case-study-image img {
+  padding: 20px 0 30px 0;
+}
+
+.prototype-mov {
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+
+/* Conclusion */
+
+.conclusion-section {
+  padding: 0 0 30px 0;
+}
+
+#conclusion-first-paragraph-mobile {
+  padding-top: 10px;
+}
+
+.conclusion-section .bio-links {
+  padding-top: 40px;
+  margin-left: 0;
+}
+
+#final-trove-img {
+  margin-bottom: -40px;
+}
+
+@media (min-width: 768px) {
+
+  .conclusion-section .bio-links {
+    padding-top: 40px;
   }
 }

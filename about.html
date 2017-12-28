@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Amanda Dyson</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/AD-favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600,700|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- disable pinterest overlay -->
+    <meta name="pinterest" content="nohover" />
+
+  </head>
+  <body>
+    <header>
+      <nav class="header animated fadeIn">
+        <div class="mobile-menu" id="mobile-menu">
+          <ul class="mobile-menu-items">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="index.html#jump-to-work">WORK</a></li>
+          </ul>
+        </div>
+        <div class="one-half">
+          <a href="index.html"><img class="logo" src="assets/AD-logo.png" alt="Amanda Dyson"></a>
+        </div>
+        <div class="one-half">
+
+          <div class="spinner-master2">
+            <input type="checkbox" id="spinner-form2" />
+            <label for="spinner-form2" class="spinner-spin2" id="menu">
+              <div class="spinner2 diagonal part-1"></div>
+              <div class="spinner2 horizontal"></div>
+              <div class="spinner2 diagonal part-2"></div>
+            </label>
+          </div>
+
+          <ul class="menu-items">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="index.html#jump-to-work">WORK</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="about-page">
+
+      <section class="bio-section">
+        <div class="bio-image">
+          <img src="assets/amanda-sm.jpg" alt="Bio Photo">
+        </div>
+        <div class="bio" id="jump-to-about">
+          <p><b>Hey there, I’m Amanda. I’m a UX/UI designer based in San Francisco.</b> My background is in visual art and I worked in the non-profit world for nearly a decade before focusing on design. Both past lives have served me well and contribute to my design goal to create user-centered experiences that are intuitive and delightful. I’m no stranger to research, strategy, problem-solving, and bringing people with different perspectives together to move a project forward. I’m well-practiced at keeping the bigger picture in mind while being attentive to the little details. I enjoy turning on some jams, brewing up a cup of tea, and putting ideas onto the page (or screen). In my free time you can find me reading, traveling, or exploring potential new hobbies like DJing or learning Mandarin. I’m currently looking for new opportunities, so please be in touch.</p>
+        </div>
+      </section>
+
+      <section class="bio-links-section">
+        <div>
+          <ul class="bio-links">
+            <li><a href="mailto:hello@amandadyson.com">EMAIL</a></li>
+            <li><a href="assets/amandadyson.com-resume-12.16.17.pdf" target="_blank">RESUME</a></li>
+            <li><a href="https://www.linkedin.com/in/amanda-dyson" target="_blank">LINKEDIN</a></li>
+            <li><a href="https://github.com/amandadyson" target="_blank">GITHUB</a></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="footer">
+      <div class="footer-logo">
+        <a href="index.html"><img src="assets/AD-white-footer-logo.png" alt="Amanda Dyson"></a>
+      </div>
+      <div class="footer-background">
+        <img src="assets/footer-home-yellow.png" alt="Amanda Dyson">
+      </div>
+    </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+          $('#menu').on('click', function(){
+              $('#mobile-menu').toggleClass('open', 200);
+              $(this).toggleClass('close');
+              return false;
+          });
+        });
+
+        $(document).click(function(){
+          if($('#mobile-menu').hasClass('open')) {
+              $('#mobile-menu').removeClass('open');
+              $('#menu').removeClass('close');
+          }
+        });
+
+        $(window).resize(function(){
+          if($('#mobile-menu').hasClass('open')) {
+              $('#mobile-menu').removeClass('open');
+              $('#menu').removeClass('close');
+          }
+        });
+
+        // Select all links with hashes
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+
+
+      function hasTouch() {
+        return 'ontouchstart' in document.documentElement
+           || navigator.maxTouchPoints > 0
+           || navigator.msMaxTouchPoints > 0;
+         }
+
+
+      // disable hover states on touch based devices
+
+      if (hasTouch()) { // remove all :hover stylesheets
+        try { // prevent exception on browsers not supporting DOM styleSheets properly
+          for (var si in document.styleSheets) {
+            var styleSheet = document.styleSheets[si];
+            if (!styleSheet.rules) continue;
+
+            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
+
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                    styleSheet.deleteRule(ri);
+                }
+             }
+          }
+        } catch (ex) {}
+      }
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111029572-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111029572-1');
+    </script>
+
+  </body>
+</html>
