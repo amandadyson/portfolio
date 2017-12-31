@@ -343,6 +343,14 @@ p {
 }
 
 
+#habit-link {
+  display: block;
+}
+
+#habit-link-two-columns {
+  display: none;
+}
+
 #habit-link:hover .overlay {
   visibility: visible;
   display: block;
@@ -369,16 +377,6 @@ p {
 }
 
 #trove-link:hover .overlay-title {
-  visibility: visible;
-  display: block;
-}
-
-#tbd-link:hover .overlay {
-  visibility: visible;
-  display: block;
-}
-
-#tbd-link:hover .overlay-title {
   visibility: visible;
   display: block;
 }
@@ -418,10 +416,6 @@ p {
       background-color: rgba(26,148,111,.9);
   }
 
-  .tbd-overlay {
-      background-color: rgba(129,129,129,.9);
-  }
-
   .overlay-title {
     font-size: 60px;
   }
@@ -431,11 +425,8 @@ p {
   }
 }
 
-#coming-soon {
-  display: none;
-}
-
 @media (min-width: 768px)  {
+
   .work {
     margin-left: 22%;
     margin-right: 22%;
@@ -460,6 +451,7 @@ p {
 
   .work {
     margin: 0;
+    padding-bottom: 100px;
   }
 
   .projects {
@@ -481,9 +473,51 @@ p {
     width: 100%;
   }
 
-  #coming-soon {
-    display: inline-block;
+  #habit-link {
+    display: none;
   }
+
+  #habit-link-two-columns {
+    display: block;
+    transition: .5s ease;
+    width: 824px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  #habit-link-two-columns:hover .overlay-two-columns {
+    visibility: visible;
+    display: block;
+  }
+
+  #habit-link-two-columns:hover .overlay-title {
+    visibility: visible;
+    display: block;
+  }
+
+  .overlay-two-columns {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 824px;
+    margin-top: 442px;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    -webkit-transition: all 50ms ease-in-out;
+  	   -moz-transition: all 50ms ease-in-out;
+  		-ms-transition: all 50ms ease-in-out;
+  		 -o-transition: all 50ms ease-in-out;
+  			transition: all 50ms ease-in-out;
+  }
+
 }
 
 

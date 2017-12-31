@@ -55,6 +55,15 @@
       <div class="about">
         <h2 class="animated fadeIn">Hey there, I’m Amanda. I’m a UX/UI designer based in San Francisco.</h2>
       </div>
+      <a href="habit.html" id="habit-link-two-columns">
+        <div class="project-two-columns">
+          <img src="assets/habit-span-two-columns.jpg" alt="Habit" class="project-image">
+          <div class="overlay-two-columns habit-overlay">
+            <div class="overlay-title">HABIT</div>
+            <div class="overlay-description">iOS Prototype + <br>Marketing Site</div>
+          </div>
+        </div>
+      </a>
       <div class="projects" id="jump-to-work">
         <a href="habit.html" id="habit-link">
           <div class="project">
@@ -66,7 +75,7 @@
           </div>
         </a>
         <a href="trove.html" id="trove-link">
-          <div class="project">
+          <div class="project box">
             <img src="assets/trove.jpg" alt="Trove" class="project-image" id="trove-image">
             <div class="overlay trove-overlay">
               <div class="overlay-title">TROVE</div>
@@ -75,24 +84,13 @@
           </div>
         </a>
         <a href="press.html" id="press-link">
-          <div class="project">
+          <div class="project box">
             <img src="assets/press.jpg" alt="Press" class="project-image">
             <div class="overlay press-overlay">
               <div class="overlay-title">PRESS</div>
               <div class="overlay-description">iOS Prototype<br></div>
             </div>
           </div>
-        </a>
-        <a href="" id="tbd-link">
-          <div class="project" id="coming-soon">
-            <img src="assets/tbd.jpg" alt="coming soon" class="project-image">
-            <div class="overlay tbd-overlay">
-              <div class="overlay-title">COMING SOON</div>
-            </div>
-          </div>
-        </a>
-          </div>
-        </a>
       </div>
     </section>
 
@@ -193,6 +191,21 @@
           }
         } catch (ex) {}
       }
+
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+
+    //scroll-reveal
+    window.sr = ScrollReveal();
+    sr.reveal('.foo');
+    sr.reveal('.bar');
+
+    // interval passed to reveal
+    window.sr = ScrollReveal({ duration: 750 });
+    sr.reveal('.box', 400);
 
     </script>
 
