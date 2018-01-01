@@ -46,15 +46,15 @@ p {
 /* links, hover */
 
 .menu-items a:hover {
-  color: #80A2FF;
+  color: #FF65F6;
 }
 
 .mobile-menu-items a:hover {
-  color: #80A2FF;
+  color: #FF65F6;
 }
 
 .bio-links a:hover {
-  color: #80A2FF;
+  color: #FF65F6;
 }
 
 #jump-to-about {
@@ -794,7 +794,7 @@ p {
 .case-study-external-links a {
   text-decoration: none;
   font-weight: 700;
-  color: #80A2FF;
+  color: #FF65F6;
 }
 
 .case-study-external-links a:hover {
