@@ -146,7 +146,7 @@ p {
   width: 45%;
   float: left;
   position: relative;
-  min-height: 1px;
+  height: 49px;
   margin: 0 2% 20px;
 }
 
@@ -235,8 +235,8 @@ p {
     visibility: visible;
     list-style: none;
     float: right;
-    padding-top: 11px;
     margin-right: -20px;
+    padding-top: 8px;
   }
 
   .menu-items li {
