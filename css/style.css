@@ -47,14 +47,26 @@ p {
 
 .menu-items a:hover {
   color: #FF65F6;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .mobile-menu-items a:hover {
   color: #FF65F6;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .bio-links a:hover {
   color: #FF65F6;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #jump-to-about {
@@ -161,6 +173,9 @@ p {
 .about h2 {
   padding: 40px 25px 50px 25px;
   margin-bottom: 0;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 50px;
 }
 
 
@@ -233,7 +248,9 @@ p {
     color: #242424;
     font-size: 20px;
     font-weight: 600;
-    padding-left: 40px;
+    padding-bottom: 6px;
+    margin-left: 40px;
+    border-bottom: 3px solid #FEFF00;
   }
 
   .spinner-master2 {
@@ -257,6 +274,10 @@ p {
   padding-bottom: 30px;
 }
 
+.work h2 {
+padding-left: 8%;
+padding-right: 8%;
+}
 
 .project {
   width: 98%;
@@ -290,19 +311,19 @@ p {
 }
 
 .habit-overlay {
-    background-color: rgba(225,157,156,.9);
+    background-color: rgba(225,157,156,1);
 }
 
 .press-overlay {
-    background-color: rgba(249,77,47,.9);
+    background-color: rgba(249,77,47,1);
 }
 
 .trove-overlay {
-    background-color: rgba(26,148,111,.9);
+    background-color: rgba(26,148,111,1);
 }
 
 .tbd-overlay {
-    background-color: rgba(129,129,129,.9);
+    background-color: rgba(129,129,129,1);
 }
 
 .overlay-title {
@@ -354,31 +375,55 @@ p {
 #habit-link:hover .overlay {
   visibility: visible;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #habit-link:hover .overlay-title {
   visibility: visible;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #press-link:hover .overlay {
   visibility: visible;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #press-link:hover .overlay-title {
   visibility: visible;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #trove-link:hover .overlay {
   visibility: visible;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #trove-link:hover .overlay-title {
   visibility: visible;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 
@@ -387,6 +432,10 @@ p {
     margin-left:15%;
     transition: 0.3s;
     margin-right: 15%;
+  }
+  .work h2 {
+    padding-left: 0;
+    padding-right: 0;
   }
   .overlay {
     position: absolute;
@@ -405,15 +454,15 @@ p {
   }
 
   .habit-overlay {
-      background-color: rgba(225,157,156,.9);
+      background-color: rgba(225,157,156,1);
   }
 
   .press-overlay {
-      background-color: rgba(249,77,47,.9);
+      background-color: rgba(249,77,47,1);
   }
 
   .trove-overlay {
-      background-color: rgba(26,148,111,.9);
+      background-color: rgba(26,148,111,1);
   }
 
   .overlay-title {
@@ -444,7 +493,7 @@ p {
 
 @media (min-width: 1100px)  {
   .about {
-    width: 840px;
+    width: 824px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -492,11 +541,19 @@ p {
   #habit-link-two-columns:hover .overlay-two-columns {
     visibility: visible;
     display: block;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   #habit-link-two-columns:hover .overlay-title {
     visibility: visible;
     display: block;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .overlay-two-columns {
@@ -507,7 +564,7 @@ p {
     right: 0;
     height: 400px;
     width: 824px;
-    margin-top: 442px;
+    margin-top: 532px;
     margin-left: auto;
     margin-right: auto;
     visibility: hidden;
@@ -560,6 +617,10 @@ p {
 .bio-links a {
   text-decoration: none;
   color: #242424;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #FEFF00;
 }
 
 
@@ -778,7 +839,7 @@ p {
 /* Hero section and project summary */
 
 .case-study {
-  padding-top: 200px;
+  padding-top: 140px;
 }
 
 .case-study-image img {
@@ -794,15 +855,22 @@ p {
 .case-study-external-links a {
   text-decoration: none;
   font-weight: 700;
-  color: #FF65F6;
+  color: #242424;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #FEFF00;
 }
 
 .case-study-external-links a:hover {
-  color: #818181;
+  color: #FF65F6;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .project-hero-img img {
   width: 100%;
+  padding: 10px 0 40px 0;
 }
 
 .project-hero-title {
@@ -818,14 +886,14 @@ p {
   padding: 85px 0 40px 0;
 }
 
-.project-summary p {
-  margin: 0;
+#press-summary {
+  padding-top: 20px;
 }
 
 @media (min-width: 768px) {
   .project-main-content {
-    width: 60%;
     max-width: 800px;
+    width: 70%
   }
 
   .project-hero-title {
@@ -837,6 +905,10 @@ p {
   }
 
   .project-summary {
+    padding-top: 10px;
+  }
+
+  #press-summary {
     padding-top: 10px;
   }
 }
@@ -859,6 +931,10 @@ p {
   background-color: #F6F6F6;
 }
 
+.role-and-tools h3 {
+  text-align: left;
+}
+
 .role-and-tools-content {
   padding: 40px 0 55px 0;
 }
@@ -879,7 +955,7 @@ p {
   font-size: 20px;
   line-height: 36px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 1062px) {
@@ -890,13 +966,20 @@ p {
 
   .roles-and-tools-web {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #one-third-roles {
+    width: 25%;
+    margin-right: 10px;
   }
 
   .one-third {
     width: 33%;
     vertical-align: top;
     display: inline-block;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -912,7 +995,7 @@ p {
 }
 
 .problem-solution .project-summary {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .problem-statement {
