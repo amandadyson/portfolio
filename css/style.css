@@ -303,11 +303,6 @@ padding-right: 8%;
   height: 99%;
   width: 100%;
   visibility: hidden;
-  -webkit-transition: all 50ms ease-in-out;
-	   -moz-transition: all 50ms ease-in-out;
-		-ms-transition: all 50ms ease-in-out;
-		 -o-transition: all 50ms ease-in-out;
-			transition: all 50ms ease-in-out;
 }
 
 .museum-overlay {
@@ -336,11 +331,6 @@ padding-right: 8%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   visibility: hidden;
-  -webkit-transition: all 50ms ease-in-out;
-     -moz-transition: all 50ms ease-in-out;
-    -ms-transition: all 50ms ease-in-out;
-     -o-transition: all 50ms ease-in-out;
-      transition: all 50ms ease-in-out;
 }
 
 .museum-title {
@@ -367,11 +357,6 @@ padding-right: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  -webkit-transition: all 50ms ease-in-out;
-     -moz-transition: all 50ms ease-in-out;
-    -ms-transition: all 50ms ease-in-out;
-     -o-transition: all 50ms ease-in-out;
-      transition: all 50ms ease-in-out;
 }
 
 
