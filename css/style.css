@@ -919,6 +919,10 @@ padding-right: 8%;
   padding: 20px 0 40px 0;
 }
 
+.project-summary-two-links {
+  padding: 85px 0 40px 0;
+}
+
 #press-summary {
   padding-top: 20px;
 }
@@ -938,6 +942,10 @@ padding-right: 8%;
   }
 
   .project-summary {
+    padding-top: 10px;
+  }
+
+  .project-summary-two-links {
     padding-top: 10px;
   }
 
