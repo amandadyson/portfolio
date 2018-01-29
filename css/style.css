@@ -863,6 +863,40 @@ padding-right: 8%;
   }
 }
 
+/* Footer icons */
+
+.icon-links {
+  text-align: right;
+  margin-right: 120px;
+  z-index: 2;
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+}
+
+.icon-links li {
+  display: inline;
+  padding-right: 15px;
+}
+
+.icon-links a {
+  font-family: FontAwesome;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-blockthis:before {
+  content: "\f0e1";
+}
+
+@media (min-width: 768px) {
+  .icon-links {
+    margin-right: 180px;
+  }
+  .icon-links li {
+    padding-right: 30px;
+  }
+}
 
 
 
@@ -1045,10 +1079,10 @@ padding-right: 8%;
 
 .solution-statement {
   width: 90%;
-  float: right;
+  float: left;
   display: relative;
   clear: both;
-  text-align: right;
+  text-align: left;
 }
 
 #solution-talk-bubble {
@@ -1070,6 +1104,8 @@ padding-right: 8%;
 
   .solution-statement {
     width: 75%;
+    float: right;
+    text-align: right;
   }
 
   #solution-talk-bubble {
