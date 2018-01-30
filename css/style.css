@@ -116,7 +116,7 @@ p {
 }
 
 .mobile-menu-items {
-  list-style: none;
+  list-style: none outside none;
   float: right;
   text-align: right;
   padding: 85px 10% 0 0;
@@ -233,7 +233,7 @@ p {
 
   .menu-items {
     visibility: visible;
-    list-style: none;
+    list-style: none outside none;
     float: right;
     margin-right: -20px;
     padding-top: 8px;
@@ -620,7 +620,7 @@ padding-right: 8%;
 .bio-links {
   float: left;
   margin-left: 40px;
-  list-style: none;
+  list-style: none outside none;
   text-align: left;
   font-size: 20px;
   font-weight: 700;
@@ -1011,7 +1011,7 @@ padding-right: 8%;
 
 .role-tools-list {
   text-decoration: none;
-  list-style: none;
+  list-style: none outside none;
   font-size: 20px;
   line-height: 36px;
   font-weight: 400;
