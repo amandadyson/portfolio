@@ -2,8 +2,10 @@ ul {
     -webkit-margin-after: 0;
     -webkit-margin-before: 0;
     -webkit-padding-start: 0;
+    padding: 0;
     text-align: center;
 }
+
 html, body {
   overflow-x: hidden;
 }
@@ -367,6 +369,7 @@ padding-right: 8%;
 #project-link-two-columns {
   display: none;
 }
+
 
 #museum-link:hover .overlay {
   visibility: visible;
@@ -876,7 +879,7 @@ padding-right: 8%;
 
 @media (min-width: 768px) {
   .icon-links {
-    margin-right: 180px;
+    margin-right: 208px;
   }
   .icon-links li {
     padding-right: 30px;
