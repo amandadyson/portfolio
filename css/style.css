@@ -305,7 +305,21 @@ padding-right: 8%;
   height: 99%;
   width: 100%;
   visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+
+.overlay:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 
 .museum-overlay {
     background-color: rgba(0,166,255,1);
@@ -333,11 +347,15 @@ padding-right: 8%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .museum-title {
   text-align: center;
-  display: block;
   position: relative;
   clear: both;
 }
@@ -359,88 +377,57 @@ padding-right: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-
-#habit-link {
-  display: block;
-}
 
 #project-link-two-columns {
   display: none;
 }
 
-
 #museum-link:hover .overlay {
   visibility: visible;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 #museum-link:hover .overlay-title {
   visibility: visible;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
+
 
 #habit-link:hover .overlay {
   visibility: visible;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 #habit-link:hover .overlay-title {
   visibility: visible;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 #press-link:hover .overlay {
   visibility: visible;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 #press-link:hover .overlay-title {
   visibility: visible;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 #trove-link:hover .overlay {
   visibility: visible;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 #trove-link:hover .overlay-title {
   visibility: visible;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 
@@ -453,37 +440,6 @@ padding-right: 8%;
   .work h2 {
     padding-left: 0;
     padding-right: 0;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 99%;
-    width: 100%;
-    visibility: hidden;
-    -webkit-transition: all 50ms ease-in-out;
-  	   -moz-transition: all 50ms ease-in-out;
-  		-ms-transition: all 50ms ease-in-out;
-  		 -o-transition: all 50ms ease-in-out;
-  			transition: all 50ms ease-in-out;
-  }
-
-  .museum-overlay {
-      background-color: rgba(0,166,255,1);
-  }
-
-  .habit-overlay {
-      background-color: rgba(225,157,156,1);
-  }
-
-  .press-overlay {
-      background-color: rgba(249,77,47,1);
-  }
-
-  .trove-overlay {
-      background-color: rgba(26,148,111,1);
   }
 
   .overlay-title {
@@ -548,7 +504,6 @@ padding-right: 8%;
   }
 
   #project-link-two-columns {
-    display: block;
     transition: .5s ease;
     width: 824px;
     height: 400px;
@@ -561,7 +516,7 @@ padding-right: 8%;
 
   #project-link-two-columns:hover .overlay-two-columns {
     visibility: visible;
-    display: block;
+    opacity: 1;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -570,7 +525,7 @@ padding-right: 8%;
 
   #project-link-two-columns:hover .overlay-title {
     visibility: visible;
-    display: block;
+    opacity: 1;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -589,11 +544,11 @@ padding-right: 8%;
     margin-left: auto;
     margin-right: auto;
     visibility: hidden;
-    -webkit-transition: all 50ms ease-in-out;
-  	   -moz-transition: all 50ms ease-in-out;
-  		-ms-transition: all 50ms ease-in-out;
-  		 -o-transition: all 50ms ease-in-out;
-  			transition: all 50ms ease-in-out;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
 }
