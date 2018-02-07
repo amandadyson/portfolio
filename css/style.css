@@ -329,6 +329,10 @@ padding-right: 8%;
     background-color: rgba(225,157,156,1);
 }
 
+.fonts-overlay {
+    background-color: rgba(82,82,82,1);
+}
+
 .press-overlay {
     background-color: rgba(249,77,47,1);
 }
@@ -368,6 +372,10 @@ padding-right: 8%;
   top: 72%;
 }
 
+#font-title {
+  padding-top: 40px;
+}
+
 .overlay-description {
   color: rgba(255,255,255,1);
   font-size: 16px;
@@ -405,7 +413,18 @@ padding-right: 8%;
   opacity: 1;
 }
 
+
 #habit-link:hover .overlay-title {
+  visibility: visible;
+  opacity: 1;
+}
+
+#fonts-link:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+#fonts-link:hover .overlay-title {
   visibility: visible;
   opacity: 1;
 }
@@ -1158,5 +1177,26 @@ padding-right: 8%;
 
   .conclusion-section .bio-links {
     padding-top: 40px;
+  }
+}
+
+
+
+/* Feb font project */
+
+.feb-font {
+  margin-top: 86px;
+}
+
+.feb-font-img {
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .feb-font-img {
+    padding-bottom: 40px;
+    max-width: 1850px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

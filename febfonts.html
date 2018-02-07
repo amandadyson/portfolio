@@ -29,7 +29,7 @@
         <div class="mobile-menu" id="mobile-menu">
           <ul class="mobile-menu-items">
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#jump-to-work">WORK</a></li>
+            <li><a href="index.html#jump-to-work">WORK</a></li>
           </ul>
         </div>
         <div class="one-half">
@@ -48,76 +48,35 @@
 
           <ul class="menu-items">
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#jump-to-work">WORK</a></li>
+            <li><a href="index.html#jump-to-work">WORK</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section class="work animated fadeIn">
-      <div class="about case-study-external-links">
-        <h2 class="animated fadeIn"><b>Hey there, I’m Amanda, a UX/UI designer based in San Francisco.</b> Problem-solver, relationship-builder, and user advocate. Currently: design intern at Bloc, working on a little <a href="febfonts.html">February Fonts</a> project, and searching for the best chai latte.</h2>
-      </div>
-      <div id="jump-to-work"></div>
-      <a href="museummap.html" id="project-link-two-columns">
-        <div class="project-two-columns">
-          <img src="assets/museum-map-two-columns.jpg" alt="Museum Map" class="project-image">
-          <div class="overlay-two-columns museum-overlay">
-            <div id="museum-title-top" class="overlay-title museum-title">MUSEUM</div>
-            <div class="overlay-title museum-title">MAP</div>
-            <div id="museum-description" class="overlay-description">Web Prototype</div>
-          </div>
+    <div class="feb-font">
+      <section>
+        <div class="feb-font-img bio-image animated fadeIn">
+          <img src="assets/Feb-1.png" alt="Feb-1">
         </div>
-      </a>
-      <div class="projects">
-        <a href="museummap.html" id="museum-link">
-          <div class="project">
-            <img src="assets/museum-map.jpg" alt="Museum Map" class="project-image">
-            <div class="overlay museum-overlay">
-              <div id="museum-title-top" class="overlay-title museum-title">MUSEUM</div>
-              <div class="overlay-title museum-title">MAP</div>
-              <div id="museum-description" class="overlay-description">Web Prototype</div>
-            </div>
-          </div>
-        </a>
-        <a href="habit.html" id="habit-link">
-          <div class="project box">
-            <img src="assets/Habit.jpg" alt="Habit" class="project-image">
-            <div class="overlay habit-overlay">
-              <div class="overlay-title">HABIT</div>
-              <div class="overlay-description">iOS Prototype + <br>Marketing Site</div>
-            </div>
-          </div>
-        </a>
-        <a href="febfonts.html" id="fonts-link">
-          <div class="project box">
-            <img src="assets/feb-font-project.png" alt="February Font Project" class="project-image">
-            <div class="overlay fonts-overlay">
-              <div class="overlay-title" id="font-title">FONT PROJECT</div>
-            </div>
-          </div>
-        </a>
-        <a href="trove.html" id="trove-link">
-          <div class="project box">
-            <img src="assets/trove.jpg" alt="Trove" class="project-image" id="trove-image">
-            <div class="overlay trove-overlay">
-              <div class="overlay-title">TROVE</div>
-              <div class="overlay-description">Web Prototype + <br>Marketing Site</div>
-            </div>
-          </div>
-        </a>
-        <a href="press.html" id="press-link">
-          <div class="project box">
-            <img src="assets/press.jpg" alt="Press" class="project-image">
-            <div class="overlay press-overlay">
-              <div class="overlay-title">PRESS</div>
-              <div class="overlay-description">iOS Prototype<br></div>
-            </div>
-          </div>
-        </a>
-      </div>
+        <div class="feb-font-img bio-image animated fadeIn">
+          <img src="assets/Feb-2.png" alt="Feb-2">
+        </div>
+        <div class="feb-font-img bio-image animated fadeIn">
+          <img src="assets/Feb-3.png" alt="Feb-2">
+        </div>
+        <div class="feb-font-img bio-image">
+          <img src="assets/Feb-4.png" alt="Feb-2">
+        </div>
+        <div class="feb-font-img bio-image">
+          <img src="assets/Feb-5.png" alt="Feb-2">
+        </div>
+        <div class="feb-font-img bio-image">
+          <img src="assets/Feb-6.png" alt="Feb-2">
+        </div>
+      </section>
+    </div>
 
-    </section>
 
     <section class="footer">
       <div class="footer-logo">
@@ -137,6 +96,7 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
+
 
     $(document).ready(function(){
           $('#menu').on('click', function(){
@@ -223,6 +183,19 @@
           }
         } catch (ex) {}
       }
+
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+
+    //scroll-reveal
+    window.sr = ScrollReveal();
+    sr.reveal('.foo');
+    sr.reveal('.bar');
+
+    </script>
 
     </script>
 
