@@ -63,6 +63,13 @@ p {
   transition: all 0.2s ease-in-out;
 }
 
+@-moz-document url-prefix() {
+  .menu-items {
+      padding-top: 0!important;
+      margin-top: 12px!important;
+  }
+}
+
 .bio-links a:hover {
   color: #FF65F6;
   -webkit-transition: all 0.2s ease-in-out;
