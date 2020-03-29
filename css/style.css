@@ -332,6 +332,10 @@ padding-right: 8%;
     background-color: rgba(0,166,255,1);
 }
 
+.bloc-overlay {
+    background-color: rgba(53,56,230,100);
+}
+
 .habit-overlay {
     background-color: rgba(225,157,156,1);
 }
@@ -411,6 +415,17 @@ padding-right: 8%;
 }
 
 #museum-link:hover .overlay-title {
+  visibility: visible;
+  opacity: 1;
+}
+
+#bloc-link:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#bloc-link:hover .overlay-title {
   visibility: visible;
   opacity: 1;
 }
@@ -567,7 +582,7 @@ padding-right: 8%;
     right: 0;
     height: 400px;
     width: 824px;
-    margin-top: 432px;
+    margin-top: 482px;
     margin-left: auto;
     margin-right: auto;
     visibility: hidden;
@@ -1193,7 +1208,7 @@ padding-right: 8%;
 /* Feb font project */
 
 .feb-font {
-  margin-top: 86px;
+  margin-top: 160px;
 }
 
 .feb-font-img {
@@ -1203,7 +1218,7 @@ padding-right: 8%;
 @media (min-width: 768px) {
   .feb-font-img {
     padding-bottom: 40px;
-    max-width: 1850px;
+    max-width: 824px;
     margin-left: auto;
     margin-right: auto;
   }
